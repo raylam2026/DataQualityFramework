@@ -1,17 +1,24 @@
-# Adaptive ML Data Quality Framework
+# Adaptive ML Framework for Data Quality Assessment
 
 **Student:** LAM CHIT WUI (27806)  
 **University:** University of Liverpool  
 **Program:** MSc Data Science & AI  
+**Advisor:** Dr. Petros Lalos  
+**Instructor:** Dr. Andrea Corradini  
 
-## Quick Start
+---
 
-```bash
-# Activate virtual environment
-venv\Scripts\activate
+## 🎯 Phase 3: ML Classifier - COMPLETE ✅
 
-# Run dashboard
-streamlit run dashboard/app.py
+### Overview
 
-# Run tests
-pytest tests/
+A PySpark-based machine learning framework for **automated data quality assessment** in heterogeneous big data repositories. Implements Random Forest classification with 5-fold cross-validation for detecting and categorizing quality issues across structured, semi-structured, and categorical datasets.
+
+**Current Status:** Phase 3 (MVP Testing) - All 7 tests passing ✅
+
+---
+
+## 📊 Phase 3 Test Results
+
+### All Tests Passing: 7/7 ✅
+
