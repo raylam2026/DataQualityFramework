@@ -34,3 +34,16 @@ kaggle.json
 *.pem
 .env
 .env.local
+
+# Data files
+data/raw/**/*.csv
+data/raw/**/*.xlsx
+data/raw/**/*.parquet
+
+# Large files
+*.csv
+*.xlsx
+*.parquet
+
+!data/processed/
+!tests/
