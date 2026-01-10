@@ -1,3 +1,4 @@
+cat > .gitignore << 'EOF'
 # Python
 __pycache__/
 *.py[cod]
@@ -14,11 +15,9 @@ pip-delete-this-directory.txt
 htmlcov/
 
 # Project specific
-data/raw/*
-data/processed/*
+data/raw/
 logs/
 *.log
-*.json
 .DS_Store
 
 # IDE
@@ -35,15 +34,13 @@ kaggle.json
 .env
 .env.local
 
-# Data files
-data/raw/**/*.csv
-data/raw/**/*.xlsx
-data/raw/**/*.parquet
+# Jupyter notebooks
+*.ipynb
+.ipynb_checkpoints/
 
-# Large files
-*.csv
-*.xlsx
-*.parquet
-
+# Keep labeled data
+!data/labeled/
+!data/labeled/*.csv
 !data/processed/
 !tests/
+EOF
