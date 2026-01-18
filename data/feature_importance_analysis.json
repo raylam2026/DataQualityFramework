@@ -1,0 +1,56 @@
+{
+  "timestamp": "2026-01-18T15:24:09.615895",
+  "datasets": {
+    "titanic": {
+      "analysis_type": "correlation_based",
+      "n_total_features": 0,
+      "n_numeric": 0,
+      "n_categorical": 0,
+      "top_features": [],
+      "features": {},
+      "feature_types": {},
+      "recommendations": [
+        {
+          "priority": "MEDIUM",
+          "type": "feature_engineering",
+          "message": "Explore feature interactions for titanic",
+          "reason": "Feature combinations may improve model performance"
+        }
+      ]
+    },
+    "ecommerce": {
+      "analysis_type": "correlation_based",
+      "n_total_features": 0,
+      "n_numeric": 0,
+      "n_categorical": 0,
+      "top_features": [],
+      "features": {},
+      "feature_types": {},
+      "recommendations": [
+        {
+          "priority": "MEDIUM",
+          "type": "feature_engineering",
+          "message": "Explore feature interactions for ecommerce",
+          "reason": "Feature combinations may improve model performance"
+        }
+      ]
+    },
+    "hr": {
+      "analysis_type": "correlation_based",
+      "n_total_features": 0,
+      "n_numeric": 0,
+      "n_categorical": 0,
+      "top_features": [],
+      "features": {},
+      "feature_types": {},
+      "recommendations": [
+        {
+          "priority": "MEDIUM",
+          "type": "feature_engineering",
+          "message": "Explore feature interactions for hr",
+          "reason": "Feature combinations may improve model performance"
+        }
+      ]
+    }
+  }
+}

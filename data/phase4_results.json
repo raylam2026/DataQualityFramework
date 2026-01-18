@@ -1,0 +1,62 @@
+{
+  "titanic": {
+    "dataset": "Titanic",
+    "n_samples": 89,
+    "n_high_quality": 81,
+    "n_low_quality": 8,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "auc_roc": 1.0,
+    "tn": 8,
+    "fp": 0,
+    "fn": 0,
+    "tp": 81,
+    "accuracy": 1.0
+  },
+  "ecommerce": {
+    "dataset": "E-Commerce",
+    "n_samples": 1000,
+    "n_high_quality": 872,
+    "n_low_quality": 128,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "auc_roc": 1.0,
+    "tn": 128,
+    "fp": 0,
+    "fn": 0,
+    "tp": 872,
+    "accuracy": 1.0
+  },
+  "hr": {
+    "dataset": "HR Analytics",
+    "n_samples": 147,
+    "n_high_quality": 83,
+    "n_low_quality": 64,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "auc_roc": 1.0,
+    "tn": 64,
+    "fp": 0,
+    "fn": 0,
+    "tp": 83,
+    "accuracy": 1.0
+  },
+  "combined": {
+    "dataset": "Combined",
+    "n_samples": 1236,
+    "n_high_quality": 1036,
+    "n_low_quality": 200,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "auc_roc": 1.0,
+    "tn": 200,
+    "fp": 0,
+    "fn": 0,
+    "tp": 1036,
+    "accuracy": 1.0
+  }
+}
