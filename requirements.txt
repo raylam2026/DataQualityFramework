@@ -1,32 +1,106 @@
-# Core Data Science & ML Stack
-pyspark==3.5.1
+# =============================================================================
+# requirements.txt — Adaptive ML Data Quality Framework
+# Python >= 3.10
+# Install: pip install -r requirements.txt
+# =============================================================================
+
+
+# ── CORE ML & DATA SCIENCE ───────────────────────────────────────────────────
 pandas==2.2.3
 numpy==2.1.3
 scikit-learn==1.5.2
+scipy==1.16.3
+joblib==1.5.3
+imbalanced-learn>=0.12.0       # SMOTE — phase4/phase5 class imbalance fix
+pyarrow==18.1.0                # Spark ↔ Pandas bridge + Parquet I/O
 
-# Dashboard & Visualization
+
+# ── BIG DATA (SPARK) ─────────────────────────────────────────────────────────
+pyspark==3.5.1
+py4j==0.10.9.7                 # Spark–JVM bridge (installed with pyspark)
+dill==0.4.0                    # Extended serialisation for Spark UDFs
+
+
+# ── VISUALIZATION & DASHBOARD ────────────────────────────────────────────────
 streamlit==1.41.1
 plotly==5.24.1
 matplotlib==3.10.0
 seaborn==0.13.2
+altair==5.5.0                  # Streamlit native charts
+pillow==11.3.0                 # Image handling
+pydeck==0.9.1                  # Geospatial layers in Streamlit
 
-# Data Processing & Utilities
-pyarrow==18.1.0
-openpyxl==3.1.5
-python-dotenv==1.0.1
 
-# Testing & Quality Assurance
+# ── DATA PROCESSING & UTILITIES ──────────────────────────────────────────────
+openpyxl==3.1.5                # Excel read/write
+python-dotenv==1.0.1           # .env config loading
+requests==2.32.3
+tqdm==4.67.1
+rich==13.9.4                   # Pretty console output
+python-json-logger==4.0.0      # Structured JSON logging
+
+
+# ── API & BACKEND SERVICES ───────────────────────────────────────────────────
+fastapi==0.128.0
+uvicorn==0.40.0                # ASGI server
+starlette==0.50.0              # FastAPI foundation
+pydantic==2.12.5               # Data validation
+httpx==0.28.1                  # Async HTTP client
+APScheduler==3.11.2            # Background job scheduling
+
+
+# ── DATABASE & CACHING ───────────────────────────────────────────────────────
+SQLAlchemy==2.0.46
+redis==7.1.0
+greenlet==3.3.1                # SQLAlchemy async engine
+
+
+# ── DATA INGESTION ───────────────────────────────────────────────────────────
+kaggle==1.8.3
+kagglesdk==0.1.14
+
+
+# ── JUPYTER & NOTEBOOK ───────────────────────────────────────────────────────
+jupyter==1.1.1
+jupyterlab==4.3.2
+ipython==8.31.0
+ipykernel==7.1.0
+ipywidgets==8.1.8
+nbformat==5.10.4
+nbconvert==7.16.6
+debugpy==1.8.7                 # VS Code / notebook debugger
+
+
+# ── TESTING & QA ─────────────────────────────────────────────────────────────
 pytest==8.3.4
 pytest-cov==6.0.0
+pytest-xdist==3.8.0            # Parallel test execution
+pytest-timeout==2.1.0
+coverage==7.6.11
+
+
+# ── CODE QUALITY & LINTING ───────────────────────────────────────────────────
 black==24.10.0
 flake8==7.1.1
 isort==5.13.2
+pylint==3.3.1
+pre-commit==4.0.1
 
-# Documentation
+
+# ── TYPE CHECKING ────────────────────────────────────────────────────────────
+mypy==1.14.1                   # Pinned at 1.14.1 (stable; 1.19.1 has regressions)
+types-requests==2.32.4.20250913
+types-tqdm==4.67.0.20250809
+
+
+# ── DOCUMENTATION ────────────────────────────────────────────────────────────
 sphinx==7.2.6
 sphinx-rtd-theme==2.0.0
+mkdocs==1.6.1
+mkdocs-material==9.5.48
 
-# Utility
-requests==2.32.3
-tqdm==4.67.1
-kaggle==1.8.3
+
+# ── MONITORING & SYSTEM ──────────────────────────────────────────────────────
+psutil==7.2.1                  # CPU/memory profiling
+GitPython==3.1.45              # Git metadata in experiments
+"pyspark>=3.5.0" 

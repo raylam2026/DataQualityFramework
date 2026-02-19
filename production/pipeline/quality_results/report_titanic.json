@@ -1,0 +1,33 @@
+{
+  "dataset_name": "Titanic Dataset",
+  "timestamp": "2026-02-01T21:22:37.737705",
+  "metrics": {
+    "total_records": 89,
+    "mean_quality": 0.9493097913322631,
+    "median_quality": 0.9478651685393258,
+    "std_quality": 0.008891466751011644,
+    "min_quality": 0.9335794542536116,
+    "max_quality": 0.9621508828250402,
+    "q25_quality": 0.9478651685393258,
+    "q75_quality": 0.9478651685393258,
+    "high_quality_count": 89,
+    "low_quality_count": 0,
+    "high_quality_pct": 100.0,
+    "low_quality_pct": 0.0
+  },
+  "issues": {
+    "completeness": [],
+    "consistency": [],
+    "uniqueness": [],
+    "validity": [],
+    "accuracy": [],
+    "integrity": []
+  },
+  "recommendations": [],
+  "overall_percentage": 94.93097913322632,
+  "status": "EXCELLENT",
+  "quality_distribution": {
+    "high": 100.0,
+    "low": 0.0
+  }
+}

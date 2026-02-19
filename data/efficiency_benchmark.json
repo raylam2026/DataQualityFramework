@@ -1,0 +1,83 @@
+{
+  "target_min_per_gb": 10.0,
+  "base_results": [
+    {
+      "dataset": "titanic",
+      "rows": 89,
+      "memory_mb": 0.024,
+      "feature_sec": 0.0143,
+      "predict_sec": 0.0171,
+      "total_sec": 0.0314,
+      "projected_min_per_gb": 22.16,
+      "passes_target": false
+    },
+    {
+      "dataset": "ecommerce",
+      "rows": 1000,
+      "memory_mb": 0.574,
+      "feature_sec": 0.5749,
+      "predict_sec": 0.0149,
+      "total_sec": 0.5898,
+      "projected_min_per_gb": 17.54,
+      "passes_target": false
+    },
+    {
+      "dataset": "hr",
+      "rows": 147,
+      "memory_mb": 0.168,
+      "feature_sec": 0.0779,
+      "predict_sec": 0.0152,
+      "total_sec": 0.0931,
+      "projected_min_per_gb": 9.48,
+      "passes_target": true
+    }
+  ],
+  "scale_results": [
+    {
+      "dataset": "ecommerce_x10",
+      "rows": 10000,
+      "memory_mb": 5.736,
+      "feature_sec": 0.6393,
+      "predict_sec": 0.0147,
+      "total_sec": 0.654,
+      "projected_min_per_gb": 1.95,
+      "passes_target": true
+    },
+    {
+      "dataset": "ecommerce_x50",
+      "rows": 50000,
+      "memory_mb": 28.681,
+      "feature_sec": 0.9718,
+      "predict_sec": 0.0411,
+      "total_sec": 1.0129,
+      "projected_min_per_gb": 0.6,
+      "passes_target": true
+    },
+    {
+      "dataset": "ecommerce_x100",
+      "rows": 100000,
+      "memory_mb": 57.363,
+      "feature_sec": 1.3461,
+      "predict_sec": 0.0595,
+      "total_sec": 1.4056,
+      "projected_min_per_gb": 0.42,
+      "passes_target": true
+    }
+  ],
+  "format_comparison": [
+    {
+      "format": "csv",
+      "file_size_mb": 0.165,
+      "rows": 1000,
+      "ingest_sec": 0.2829
+    },
+    {
+      "format": "json",
+      "file_size_mb": 0.434,
+      "rows": 1000,
+      "ingest_sec": 0.3449
+    }
+  ],
+  "engine": "pyspark",
+  "recommendation": "At x100 scale (57 MB), projected throughput is 0.42 min/GB. Passes the <10 min/GB target."
+}

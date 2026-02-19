@@ -34,7 +34,7 @@ MALFORMED_DATA_DIR.mkdir(parents=True, exist_ok=True)
 
 SPARK_CONFIG = {
     'appName': 'AdaptiveMLDataQuality',
-    'master': 'local',  # 4+ cores as per requirement
+    'master': 'local[4]',  # 4+ cores as per requirement
     'spark.driver.memory': '2g',
     'spark.executor.memory': '2g',
     'spark.sql.shuffle.partitions': 4,
@@ -79,7 +79,7 @@ DATASET_SPECS = {
         ],
     },
     'hr_analytics': {
-        'path': RAW_DATA_DIR / 'hr_analytics' / 'HR_Employee_Attrition_Data.csv',
+        'path': RAW_DATA_DIR / 'hr_analytics' / 'HRDataset_v14.csv',
         'format': 'csv',
         'delimiter': ',',
         'encoding': 'utf-8',

@@ -7,7 +7,7 @@ print("="*70)
 
 # Load Titanic data
 print("\n[STEP 1] Loading Titanic dataset...")
-titanic = pd.read_csv('data/raw/titanic/train.csv')
+titanic = pd.read_csv('../data/raw/titanic/train.csv')
 print(f"✅ Total rows: {len(titanic)}")
 print(f"✅ Columns: {list(titanic.columns)}")
 
@@ -35,7 +35,7 @@ print(titanic_sample['Pclass'].value_counts().sort_index())
 
 # Save sample
 print("\n[STEP 4] Saving sample to CSV...")
-output_path = 'data/labeled/titanic_sample.csv'
+output_path = '../data/labeled/titanic_sample.csv'
 titanic_sample.to_csv(output_path, index=False)
 print(f"✅ Saved to: {output_path}")
 

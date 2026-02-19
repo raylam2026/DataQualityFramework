@@ -31,20 +31,13 @@ class KaggleDatasetSetup:
             'type': 'dataset',
             'id': 'olistbr/brazilian-ecommerce',
             'files': [
-                'olist_customers_dataset.csv',
                 'olist_orders_dataset.csv',
-                'olist_order_items_dataset.csv',
-                'olist_order_payments_dataset.csv',
-                'olist_order_reviews_dataset.csv',
-                'olist_products_dataset.csv',
-                'olist_sellers_dataset.csv',
-                'product_category_name_translation.csv',
             ],
         },
         'hr_analytics': {
             'type': 'dataset',
             'id': 'rhuebner/human-resources-data-set',
-            'files': ['HR_Employee_Attrition_Data.csv'],
+            'files': ['HRDataset_v14.csv'],
         },
     }
     

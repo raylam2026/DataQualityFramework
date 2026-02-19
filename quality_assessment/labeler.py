@@ -119,30 +119,30 @@ LABELING CRITERIA:
 
 Dimension 1 - COMPLETENESS (Score=1 if ?10% nulls):
   - Count null/missing values in record
-  - If nulls ? 10% of columns ¡÷ Score = 1
-  - Otherwise ¡÷ Score = 0
+  - If nulls ? 10% of columns â†’ Score = 1
+  - Otherwise â†’ Score = 0
 
 Dimension 2 - CONSISTENCY (Score=1 if no format issues):
   - Check date fields are ISO 8601 format (YYYY-MM-DD)
   - Check categorical values match expected enums
   - Check whitespace consistency
-  - If all consistent ¡÷ Score = 1
-  - Otherwise ¡÷ Score = 0
+  - If all consistent â†’ Score = 1
+  - Otherwise â†’ Score = 0
 
 Dimension 3 - VALIDITY (Score=1 if no extreme outliers):
   - Numeric values within 3 std deviations of column mean
   - No extreme values like 99999, -1, etc.
-  - If valid ¡÷ Score = 1
-  - Otherwise ¡÷ Score = 0
+  - If valid â†’ Score = 1
+  - Otherwise â†’ Score = 0
 
 Dimension 4 - ACCURACY (Score=1 if no duplicates):
   - Exact match on all columns (except ID) = duplicate
-  - No duplicate records found ¡÷ Score = 1
-  - Duplicate found ¡÷ Score = 0
+  - No duplicate records found â†’ Score = 1
+  - Duplicate found â†’ Score = 0
 
 FINAL LABEL:
-  - Sum scores: if ?3 ¡÷ HIGH-QUALITY (label=1)
-  - Sum scores: if ?2 ¡÷ LOW-QUALITY (label=0)
+  - Sum scores: if ?3 â†’ HIGH-QUALITY (label=1)
+  - Sum scores: if ?2 â†’ LOW-QUALITY (label=0)
 
 ANNOTATION OUTPUT:
 Record_ID | Completeness | Consistency | Validity | Accuracy | Sum | Label | Notes

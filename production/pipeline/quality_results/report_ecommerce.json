@@ -1,0 +1,45 @@
+{
+  "dataset_name": "E-Commerce Dataset",
+  "timestamp": "2026-02-01T21:22:37.740707",
+  "metrics": {
+    "total_records": 1000,
+    "mean_quality": 0.8653357142857144,
+    "median_quality": 0.8303928571428573,
+    "std_quality": 0.04656289954263908,
+    "min_quality": 0.8161071428571429,
+    "max_quality": 0.9446785714285715,
+    "q25_quality": 0.8303928571428573,
+    "q75_quality": 0.9303928571428572,
+    "high_quality_count": 1000,
+    "low_quality_count": 0,
+    "high_quality_pct": 100.0,
+    "low_quality_pct": 0.0
+  },
+  "issues": {
+    "completeness": [],
+    "consistency": [],
+    "uniqueness": {
+      "affected_rows": 661,
+      "percentage": 66.1,
+      "sample_indices": [
+        2,
+        3,
+        6,
+        7,
+        8
+      ]
+    },
+    "validity": [],
+    "accuracy": [],
+    "integrity": []
+  },
+  "recommendations": [
+    "Duplicates: 66.1% of records are duplicated. Run deduplication process."
+  ],
+  "overall_percentage": 86.53357142857145,
+  "status": "GOOD",
+  "quality_distribution": {
+    "high": 100.0,
+    "low": 0.0
+  }
+}

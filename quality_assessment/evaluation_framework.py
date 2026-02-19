@@ -120,7 +120,7 @@ class HypothesisEvaluation:
         h3_met = (avg_likert >= 3.5) and (time_reduction_pct >= 30)
         
         logger.info(f'H3 Results:')
-        logger.info(f'  Likert Rating: {avg_likert:.2f} ¡Ó {std_likert:.2f} (need ?3.5)')
+        logger.info(f'  Likert Rating: {avg_likert:.2f} Â± {std_likert:.2f} (need ?3.5)')
         logger.info(f'  Time Reduction: {time_reduction_pct:.1f}% (need ?30%)')
         logger.info(f'  H3 Criteria Met: {h3_met}')
         

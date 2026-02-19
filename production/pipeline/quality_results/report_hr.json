@@ -1,0 +1,45 @@
+{
+  "dataset_name": "HR Analytics Dataset",
+  "timestamp": "2026-02-01T21:22:37.742709",
+  "metrics": {
+    "total_records": 147,
+    "mean_quality": 0.8598639455782315,
+    "median_quality": 0.8310552127827876,
+    "std_quality": 0.04361347386974937,
+    "min_quality": 0.8264040499920899,
+    "max_quality": 0.9310552127827876,
+    "q25_quality": 0.8310552127827876,
+    "q75_quality": 0.9264040499920899,
+    "high_quality_count": 147,
+    "low_quality_count": 0,
+    "high_quality_pct": 100.0,
+    "low_quality_pct": 0.0
+  },
+  "issues": {
+    "completeness": [],
+    "consistency": [],
+    "uniqueness": {
+      "affected_rows": 104,
+      "percentage": 70.74829931972789,
+      "sample_indices": [
+        0,
+        1,
+        3,
+        4,
+        5
+      ]
+    },
+    "validity": [],
+    "accuracy": [],
+    "integrity": []
+  },
+  "recommendations": [
+    "Duplicates: 70.7% of records are duplicated. Run deduplication process."
+  ],
+  "overall_percentage": 85.98639455782316,
+  "status": "GOOD",
+  "quality_distribution": {
+    "high": 100.0,
+    "low": 0.0
+  }
+}
