@@ -1,2 +1,0 @@
-Requirement already satisfied: pyspark in c:\users\user\documents\dataqualityframework\venv\lib\site-packages (3.5.1)
-Requirement already satisfied: py4j==0.10.9.7 in c:\users\user\documents\dataqualityframework\venv\lib\site-packages (from pyspark) (0.10.9.7)
